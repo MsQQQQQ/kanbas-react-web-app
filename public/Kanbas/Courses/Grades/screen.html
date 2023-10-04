@@ -73,7 +73,7 @@
                 </li>
             </ul>
         </div>
-        <div class="wd-flex-col-container wd-flex-grow-1">
+        <div class="wd-flex-col-container wd-flex-grow-1" style="width: 100%;">
             <div class="icon">
                 <i class="fa fa-bars" aria-hidden="true"></i>
                 <nav class="breadcrumb-bar wd-flex-grow-1" style="--bs-breadcrumb-divider: '>';"
@@ -85,7 +85,7 @@
                 </nav>
             </div>
             <div class="wd-flex-row-container">
-                <div>
+                <div style="width: 200px;">
                     <ul class="wd-course-navigation d-none d-md-block">
                         <li>
                             <a href="/Kanbas/Courses/Home/screen.html">Home</a>
@@ -111,33 +111,36 @@
                         <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
                     </ul>
                 </div>
-                <div>
-                    <div class="col btn-toolbar d-flex justify-content-end">
-                        <div class="btn-group me-2" role="group">
-                            <button type="button" class="btn btn-light">
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                                Import
-                            </button>
-                        </div>
-                        <div class="btn-group me-2 " role="group">
-                            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="fa fa-upload" aria-hidden="true"></i>
-                                Export
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Export</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group me-2" role="group">
-                            <button type="button" class="btn btn-light">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </button>
+                <div style="width: 100%;">
+                    <div class="col-10">
+                        <div class="col btn-toolbar justify-content-end">
+                            <div class="btn-group me-2" role="group">
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                    Import
+                                </button>
+                            </div>
+                            <div class="btn-group me-2 " role="group">
+                                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-upload" aria-hidden="true"></i>
+                                    Export
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group me-2" role="group">
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
+
                     <div class="container">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-5">
                                 <div class="mb-3">
                                     <label for="studentSelect" class="form-label search-title">Student Names</label>
                                     <div class="input-group">
@@ -149,7 +152,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-5">
                                 <div class="mb-3">
                                     <label for="assignmentSelect" class="form-label search-title">Assignment
                                         Names</label>
@@ -163,141 +166,144 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-light">
+                    <button type="button" class="btn btn-light mx-4 mt-4 mb-4">
                         <i class="fa fa-filter" aria-hidden="true"></i>
                         Apply Filters
                     </button>
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Student Name</th>
-                                    <th>A1 - HTML</th>
-                                    <th>A2 - CSS</th>
-                                    <th>A3 - JS</th>
-                                    <th>A4 - PHP</th>
-                                    <th>A5 - SQL</th>
-                                    <th>A6 - React</th>
-                                    <th>A7 - Node</th>
-                                    <th>A8 - Express</th>
-                                    <th>A9 - MongoDB</th>
-                                    <th>A10 - Mongoose</th>
-                                    <th>A11 - Redux</th>
-                                    <th>Q1</th>
-                                    <th>Q2</th>
-                                    <th>Q3</th>
-                                    <th>Q4</th>
-                                    <th>Exam 1</th>
-                                    <th>Exam 2</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="">Alice Wonderland</td>
-                                    <td class="px-5" style="text-align:center">98%</td>
-                                    <td class="px-5" style="text-align:center">89%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                    <td class="px-5" style="text-align:center">90%</td>
-                                    <td class="" style="text-align:center">
-                                        <input type="text" class="form-control" placeholder="100%">
-                                    </td>
-                                    <td class="px-5" style="text-align:center">94%</td>
-                                    <td class="px-5" style="text-align:center">88%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                    <td class="px-5" style="text-align:center">100%</td>
-                                    <td class="px-5" style="text-align:center">97%</td>
-                                    <td class="px-5" style="text-align:center">89%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                    <td class="px-5" style="text-align:center">90%</td>
-                                    <td class="px-5" style="text-align:center">99%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                    <td class="px-5" style="text-align:center">99%</td>
-                                    <td class="px-5" style="text-align:center">98%</td>
-                                </tr>
-                                <tr>
-                                    <td>Bob Builder</td>
-                                    <td class="px-5" style="text-align:center">98%</td>
-                                    <td class="px-5" style="text-align:center">80%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                    <td class="px-5" style="text-align:center">86%</td>
-                                    <td class="px-5" style="text-align:center">100%</td>
-                                    <td class="px-5" style="text-align:center">94%</td>
-                                    <td class="px-5" style="text-align:center">85%</td>
-                                    <td class="px-5" style="text-align:center">84%</td>
-                                    <td class="px-5" style="text-align:center">92%</td>
-                                    <td class="px-5" style="text-align:center">82%</td>
-                                    <td class="px-5" style="text-align:center">88%</td>
-                                    <td class="px-5" style="text-align:center">95%</td>
-                                    <td class="px-5" style="text-align:center">100%</td>
-                                    <td class="px-5" style="text-align:center">93%</td>
-                                    <td class="px-5" style="text-align:center">98%</td>
-                                    <td class="px-5" style="text-align:center">85%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                </tr>
-                                <tr>
-                                    <td>Charlie Chaplin</td>
-                                    <td style="text-align:center">99%</td>
-                                    <td style="text-align:center">88%</td>
-                                    <td style="text-align:center">97%</td>
-                                    <td style="text-align:center">82%</td>
-                                    <td style="text-align:center">96%</td>
-                                    <td style="text-align:center">93%</td>
-                                    <td style="text-align:center">95%</td>
-                                    <td style="text-align:center">100%</td>
-                                    <td style="text-align:center">93%</td>
-                                    <td style="text-align:center">80%</td>
-                                    <td style="text-align:center">89%</td>
-                                    <td style="text-align:center">99%</td>
-                                    <td style="text-align:center">89%</td>
-                                    <td style="text-align:center">96%</td>
-                                    <td style="text-align:center">85%</td>
-                                    <td style="text-align:center">96%</td>
-                                    <td style="text-align:center">92%</td>
-                                </tr>
-                                <tr>
-                                    <td>Darth Vader</td>
-                                    <td class="px-5" style="text-align:center">83%</td>
-                                    <td class="px-5" style="text-align:center">99%</td>
-                                    <td class="px-5" style="text-align:center">94%</td>
-                                    <td class="px-5" style="text-align:center">98%</td>
-                                    <td class="px-5" style="text-align:center">86%</td>
-                                    <td class="px-5" style="text-align:center">85%</td>
-                                    <td class="px-5" style="text-align:center">86%</td>
-                                    <td class="px-5" style="text-align:center">80%</td>
-                                    <td class="px-5" style="text-align:center">84%</td>
-                                    <td class="px-5" style="text-align:center">85%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                    <td class="px-5" style="text-align:center">85%</td>
-                                    <td class="px-5" style="text-align:center">96%</td>
-                                    <td class="px-5" style="text-align:center">96%</td>
-                                    <td class="px-5" style="text-align:center">100%</td>
-                                    <td class="px-5" style="text-align:center">83%</td>
-                                    <td class="px-5" style="text-align:center">83%</td>
-                                </tr>
-                                <tr>
-                                    <td>Ellen Walker</td>
-                                    <td class="px-5" style="text-align:center">83%</td>
-                                    <td class="px-5" style="text-align:center">92%</td>
-                                    <td class="px-5" style="text-align:center">80%</td>
-                                    <td class="px-5" style="text-align:center">80%</td>
-                                    <td class="px-5" tyle="text-align:center">94%</td>
-                                    <td class="px-5" style="text-align:center">93%</td>
-                                    <td class="px-5" style="text-align:center">95%</td>
-                                    <td class="px-5" style="text-align:center">89%</td>
-                                    <td class="px-5" style="text-align:center">96%</td>
-                                    <td class="px-5" style="text-align:center">94%</td>
-                                    <td class="px-5" style="text-align:center">81%</td>
-                                    <td class="px-5" style="text-align:center">92%</td>
-                                    <td class="px-5" style="text-align:center">93%</td>
-                                    <td class="px-5" style="text-align:center">89%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                    <td class="px-5" style="text-align:center">98%</td>
-                                    <td class="px-5" style="text-align:center">87%</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="col-10">
+                        <div class="table-responsive mx-4">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Student Name</th>
+                                        <th>A1 - HTML</th>
+                                        <th>A2 - CSS</th>
+                                        <th>A3 - JS</th>
+                                        <th>A4 - PHP</th>
+                                        <th>A5 - SQL</th>
+                                        <th>A6 - React</th>
+                                        <th>A7 - Node</th>
+                                        <th>A8 - Express</th>
+                                        <th>A9 - MongoDB</th>
+                                        <th>A10 - Mongoose</th>
+                                        <th>A11 - Redux</th>
+                                        <th>Q1</th>
+                                        <th>Q2</th>
+                                        <th>Q3</th>
+                                        <th>Q4</th>
+                                        <th>Exam 1</th>
+                                        <th>Exam 2</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">Alice Wonderland</td>
+                                        <td class="px-5" style="text-align:center">98%</td>
+                                        <td class="px-5" style="text-align:center">89%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                        <td class="px-5" style="text-align:center">90%</td>
+                                        <td class="" style="text-align:center">
+                                            <input type="text" class="form-control" placeholder="100%">
+                                        </td>
+                                        <td class="px-5" style="text-align:center">94%</td>
+                                        <td class="px-5" style="text-align:center">88%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                        <td class="px-5" style="text-align:center">100%</td>
+                                        <td class="px-5" style="text-align:center">97%</td>
+                                        <td class="px-5" style="text-align:center">89%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                        <td class="px-5" style="text-align:center">90%</td>
+                                        <td class="px-5" style="text-align:center">99%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                        <td class="px-5" style="text-align:center">99%</td>
+                                        <td class="px-5" style="text-align:center">98%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bob Builder</td>
+                                        <td class="px-5" style="text-align:center">98%</td>
+                                        <td class="px-5" style="text-align:center">80%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                        <td class="px-5" style="text-align:center">86%</td>
+                                        <td class="px-5" style="text-align:center">100%</td>
+                                        <td class="px-5" style="text-align:center">94%</td>
+                                        <td class="px-5" style="text-align:center">85%</td>
+                                        <td class="px-5" style="text-align:center">84%</td>
+                                        <td class="px-5" style="text-align:center">92%</td>
+                                        <td class="px-5" style="text-align:center">82%</td>
+                                        <td class="px-5" style="text-align:center">88%</td>
+                                        <td class="px-5" style="text-align:center">95%</td>
+                                        <td class="px-5" style="text-align:center">100%</td>
+                                        <td class="px-5" style="text-align:center">93%</td>
+                                        <td class="px-5" style="text-align:center">98%</td>
+                                        <td class="px-5" style="text-align:center">85%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charlie Chaplin</td>
+                                        <td style="text-align:center">99%</td>
+                                        <td style="text-align:center">88%</td>
+                                        <td style="text-align:center">97%</td>
+                                        <td style="text-align:center">82%</td>
+                                        <td style="text-align:center">96%</td>
+                                        <td style="text-align:center">93%</td>
+                                        <td style="text-align:center">95%</td>
+                                        <td style="text-align:center">100%</td>
+                                        <td style="text-align:center">93%</td>
+                                        <td style="text-align:center">80%</td>
+                                        <td style="text-align:center">89%</td>
+                                        <td style="text-align:center">99%</td>
+                                        <td style="text-align:center">89%</td>
+                                        <td style="text-align:center">96%</td>
+                                        <td style="text-align:center">85%</td>
+                                        <td style="text-align:center">96%</td>
+                                        <td style="text-align:center">92%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Darth Vader</td>
+                                        <td class="px-5" style="text-align:center">83%</td>
+                                        <td class="px-5" style="text-align:center">99%</td>
+                                        <td class="px-5" style="text-align:center">94%</td>
+                                        <td class="px-5" style="text-align:center">98%</td>
+                                        <td class="px-5" style="text-align:center">86%</td>
+                                        <td class="px-5" style="text-align:center">85%</td>
+                                        <td class="px-5" style="text-align:center">86%</td>
+                                        <td class="px-5" style="text-align:center">80%</td>
+                                        <td class="px-5" style="text-align:center">84%</td>
+                                        <td class="px-5" style="text-align:center">85%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                        <td class="px-5" style="text-align:center">85%</td>
+                                        <td class="px-5" style="text-align:center">96%</td>
+                                        <td class="px-5" style="text-align:center">96%</td>
+                                        <td class="px-5" style="text-align:center">100%</td>
+                                        <td class="px-5" style="text-align:center">83%</td>
+                                        <td class="px-5" style="text-align:center">83%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ellen Walker</td>
+                                        <td class="px-5" style="text-align:center">83%</td>
+                                        <td class="px-5" style="text-align:center">92%</td>
+                                        <td class="px-5" style="text-align:center">80%</td>
+                                        <td class="px-5" style="text-align:center">80%</td>
+                                        <td class="px-5" tyle="text-align:center">94%</td>
+                                        <td class="px-5" style="text-align:center">93%</td>
+                                        <td class="px-5" style="text-align:center">95%</td>
+                                        <td class="px-5" style="text-align:center">89%</td>
+                                        <td class="px-5" style="text-align:center">96%</td>
+                                        <td class="px-5" style="text-align:center">94%</td>
+                                        <td class="px-5" style="text-align:center">81%</td>
+                                        <td class="px-5" style="text-align:center">92%</td>
+                                        <td class="px-5" style="text-align:center">93%</td>
+                                        <td class="px-5" style="text-align:center">89%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                        <td class="px-5" style="text-align:center">98%</td>
+                                        <td class="px-5" style="text-align:center">87%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

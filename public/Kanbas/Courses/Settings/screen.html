@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/Kanbas/Calendar/screen.html">
+                    <a href="#">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <div>Calendar</div>
                     </a>
@@ -84,8 +84,8 @@
                     </ol>
                 </nav>
             </div>
-            <div class="wd-flex-row-container">
-                <div>
+            <div class="wd-flex-row-container ">
+                <div style="width: 180px;">
                     <ul class="wd-course-navigation d-none d-md-block">
                         <li>
                             <a href="/Kanbas/Courses/Home/screen.html">Home</a>
@@ -111,7 +111,7 @@
                         <li class="wd-active"><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
                     </ul>
                 </div>
-                <div class="wd-flex-grow-1">
+                <div class="wd-flex-grow-1 mx-4">
                     <div class="container-fluid wd-flex-grow-1">
                         <ul class="nav nav-tabs" style="width: 100%;">
                             <li class="nav-item">
@@ -136,51 +136,53 @@
                             </li>
                         </ul>
                     </div>
-                    <h1>Course Details</h1>
+                    <div class="title-font-size mt-2 mb-2">Course Details</div>
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Image:</label>
                             </div>
-                            <div class="col-md-8">
-                                <input type="file" class="custom-file-input" id="imageUpload" accept="image/*">
-                                <label class="custom-file-label" for="imageUpload">Choose Image</label>
+                            <div class="col-md-10">
+                                <div class="outline" style="width: 60%;">
+                                    <input type="file" class="custom-file-input" id="imageUpload" accept="image/*">
+                                    <label class="custom-file-label" for="imageUpload"></label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Name:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 CS5610 Web Development SEC 01 Fall 2023 [BOS-1-TR]
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Course Code:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 CS5610
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Blueprint Course:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 No
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Course Template:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" disabled>
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Enable course as a Course Template
@@ -188,80 +190,80 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label for="exampleFormControlInput1" class="form-label">Time Zone</label>
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
+                                <label for="exampleFormControlInput1" class="form-label">Time Zone:</label>
                             </div>
-                            <div class="col-md-8">
-                                <select class="form-select">
+                            <div class="col-md-10">
+                                <select class="form-select" style="width: 60%;">
                                     <option selected>Eastern Time(US & Canada)(-05:00/-04:00)</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">SIS ID:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 CS5610
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Subaccount:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 CS Graduate
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Term:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 202410_1 Fall 2023 Semester Full Term
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Participation:</label>
                             </div>
-                            <div class="col-md-8">
-                                <select class="form-select">
+                            <div class="col-md-10">
+                                <select class="form-select" style="width: 60%;">
                                     <option selected>Term</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-8">
+                        <div class="row mt-4">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-10">
                                 <p>Course participation is limited to term start and end dates</p>
                                 <div>
                                     <b>Start</b>
-                                    <div class="input-group mb-3">
+                                    <div class="input-group mb-3" style="width: 60%;">
                                         <input type="date" class="form-control" aria-describedby="basic-addon2">
                                     </div>
                                 </div>
                                 <div>
                                     <b>End</b>
-                                    <div class="input-group mb-3">
+                                    <div class="input-group mb-3" style="width: 60%;">
                                         <input type="date" class="form-control" aria-describedby="basic-addon2">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-8">
+                        <div class="row mt-4">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-10">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Restrict students from viewing course before term start date
                                 </label>
-                                <br />
+                                <br /><br />
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Restrict students from viewing course after term end date
@@ -269,12 +271,12 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2">
                                 <label for="exampleFormControlInput1" class="form-label">Default due time:</label>
                             </div>
-                            <div class="col-md-8">
-                                <select class="form-select">
+                            <div class="col-md-10">
+                                <select class="form-select mb-2" style="width: 60%;">
                                     <option selected>Account default (11:59pm)</option>
                                 </select>
                                 <p>This influences the user interface for setting due dates. It does not change the
@@ -282,12 +284,12 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2">
                                 <label for="exampleFormControlInput1" class="form-label">Language:</label>
                             </div>
-                            <div class="col-md-8">
-                                <select class="form-select">
+                            <div class="col-md-10">
+                                <select class="form-select mb-2" style="width: 60%;">
                                     <option selected>Not set (user- configurable, defaults to English (Unit</option>
                                 </select>
                                 <p>This will override any user/system language preferences. This is only recommended
@@ -295,18 +297,18 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">File Storage:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 10000 megabytes
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">Large Course:</div>
-                            <div class="col-md-8">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">Large Course:</div>
+                            <div class="col-md-10">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Launch SpeedGrader Filtered by Student Group
@@ -314,9 +316,9 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">Grading Scheme:</div>
-                            <div class="col-md-8">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">Grading Scheme:</div>
+                            <div class="col-md-10">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Enable course grading scheme
@@ -324,20 +326,20 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">License:</label>
                             </div>
-                            <div class="col-md-8">
-                                <select class="form-select">
+                            <div class="col-md-10">
+                                <select class="form-select" style="width: 60%;">
                                     <option selected>Private (Copyrighted)</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">File Copyright:</div>
-                            <div class="col-md-8">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">File Copyright:</div>
+                            <div class="col-md-10">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Copyright and license information must be provided for files before they Dare
@@ -346,13 +348,13 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Visibility:</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 <p>If you need to make your course public please contact your administrator/support.</p>
-                                <select class="form-select" disabled>
+                                <select class="form-select" style="width: 60%;" disabled>
                                     <option selected>Course</option>
                                 </select>
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -362,20 +364,20 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
                                 <label for="exampleFormControlInput1" class="form-label">Format:</label>
                             </div>
-                            <div class="col-md-8">
-                                <select class="form-select">
+                            <div class="col-md-10">
+                                <select class="form-select" style="width: 60%;">
                                     <option selected>On-Campus</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">Mastery Paths:</div>
-                            <div class="col-md-8">
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">Mastery Paths:</div>
+                            <div class="col-md-10">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Enable individual learning paths for students based on assessment
@@ -383,24 +385,25 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label for="exampleFormControlInput1" class="form-label">Description::</label>
+                        <div class="row mt-4">
+                            <div class="col-md-2 align-self-center">
+                                <label for="exampleFormControlInput1" class="form-label">Description:</label>
                             </div>
-                            <div class="col-md-8">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    style="width: 60%;"></textarea>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-8">
-                                <p>more options</p>
+                        <div class="row mt-4">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-10">
+                                <p style="color: red;">more options</p>
                             </div>
                         </div>
                     </div>
                     <hr />
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-end mb-4">
                         <button type="button" class="btn btn-danger">
                             Update Course Details
                         </button>

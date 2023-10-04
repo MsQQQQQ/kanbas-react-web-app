@@ -110,3 +110,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.small-menu i {
+    color: rgb(196, 11, 11);
+}
+
+.menu2 {
+    list-style-type: none;
+}

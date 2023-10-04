@@ -189,3 +189,13 @@
 .red-link {
     color: rgb(196, 11, 11);
 }
+
+.large-font {
+    font-size: larger;
+}
+
+.bottom-font {
+    font-size: medium;
+    font-style: italic;
+    margin-left: 10px;
+}

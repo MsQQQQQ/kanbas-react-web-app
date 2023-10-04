@@ -70,3 +70,9 @@ body * {
     text-decoration: none;
     color: rgb(196, 11, 11);
 }
+
+.card-title-link {
+    text-decoration: none;
+    color: #7d7dcb;
+    font-size: 14px;
+}
