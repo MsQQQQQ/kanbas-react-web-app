@@ -1,168 +1,570 @@
-<table border="1" width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="#">Calender</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                </li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <button>Collapse All</button>
-            <button>View Progress</button>
-            <select>
-                <option>Publish All</option>
-                <option>Publish all items and modules</option>
-                <option>UnPublish</option>
-            </select>
-            <button>+ Module</button>
-            <hr />
-            <ul>
-                <li>
-                    Week 0 - INTRO
-                    <ul>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="../../KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="../../../lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../../../lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../Courses/CourseNavigation/index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="../../../lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../lib/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="modal fade" id="menu1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="d-flex justify-content-end mx-4 my-4">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container small-menu">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-user-circle account fa-3x me-3" aria-hidden="true"></i>
+                                <a href="/Kanbas/Account/screen.html" class="wd-hyperlink">
+                                    <div>Account</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-tachometer fa-3x me-3" aria-hidden="true"></i>
+                                <a href="/Kanbas/Dashboard/screen.html" class="wd-hyperlink">
+                                    <div>Dashboard</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-book fa-3x me-3" aria-hidden="true"></i>
+                                <a href="/Kanbas/Courses/Home/screen.html" class="wd-hyperlink">
+                                    <div>Courses</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-calendar fa-3x me-3" aria-hidden="true"></i>
+                                <a href="#" class="wd-hyperlink">
+                                    <div>Calendar</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-inbox fa-3x me-3" aria-hidden="true"></i>
+                                <a href="#" class="wd-hyperlink">
+                                    <div>Inbox</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-clock-o fa-3x me-3" aria-hidden="true"></i>
+                                <a href="#" class="wd-hyperlink">
+                                    <div>History</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-desktop fa-3x me-3" aria-hidden="true"></i>
+                                <a href="#" class="wd-hyperlink">
+                                    <div>Studio</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-creative-commons fa-3x me-3" aria-hidden="true"></i>
+                                <a href="#" class="wd-hyperlink">
+                                    <div>Commons</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-question-circle-o fa-3x me-3" aria-hidden="true"></i>
+                                <a href="#" class="wd-hyperlink">
+                                    <div>Help</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="menu2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="d-flex justify-content-end mx-4 my-4">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container">
+                    <ul class="menu2">
                         <li>
-                            LEARNING OBJECTIVES
-                            <ul>
-                                <li>Introduction to the course</li>
-                                <li>Learn what is Web Development</li>
-                                <li>Creating a development environment</li>
-                                <li>Creating a Web Application</li>
-                                <li>Getting started with the 1st assignment</li>
-                            </ul>
+                            <a href="/Kanbas/Courses/Home/screen.html" class="wd-hyperlink">Home</a>
                         </li>
-                        <li>READING
-                            <ul>
-                                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                            </ul>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html" class="wd-hyperlink">Modules</a></li>
+                        <li><a href="#" class="wd-hyperlink">Piazza</a></li>
+                        <li><a href="#" class="wd-hyperlink">Zoom Meetings</a></li>
+                        <li class="wd-active">
+                            <a href="/Kanbas/Courses/Assignments/screen.html" class="wd-hyperlink">Assignments</a>
                         </li>
-                        <li>
-                            SLIDES
-                            <ul>
-                                <li><a href="#">Introduction to Web Development Links to an external site.</a></li>
-                                <li><a href="#">Creating an HTTP server with Node.js Links to an external site.</a></li>
-                                <li><a href="#">Creating a React Application Links to an external site.</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="#" class="wd-hyperlink">Quizzes</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html" class="wd-hyperlink">Grades</a></li>
+                        <li><a href="#" class="wd-hyperlink">People</a></li>
+                        <li><a href="#" class="wd-hyperlink">Panopto Video</a></li>
+                        <li><a href="#" class="wd-hyperlink">Discussions</a></li>
+                        <li><a href="#" class="wd-hyperlink">Announcements</a></li>
+                        <li><a href="#" class="wd-hyperlink">Pages</a></li>
+                        <li><a href="#" class="wd-hyperlink">Files</a></li>
+                        <li><a href="#" class="wd-hyperlink">Rubrics</a></li>
+                        <li><a href="#" class="wd-hyperlink">Outcomes</a></li>
+                        <li><a href="#" class="wd-hyperlink">Collaborations</a></li>
+                        <li><a href="#" class="wd-hyperlink">Syllabus</a></li>
+                        <li><a href="/Kanbas/Courses/Settings/screen.html" class="wd-hyperlink">Settings</a></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+                <li class="wd-active neu-icon">
+                    <a href="/Kanbas/Dashboard/screen.html"></a>
                 </li>
                 <li>
-                    Week 1 - HTML
-                    <ul>
-                        <li>
-                            LEARNING OBJECTIVES
-                            <ul>
-                                <li>Learn how to create user interfaces with HTML</li>
-                                <li>Keep working on assignment 1</li>
-                                <li>Deploy the assignment to Netlify</li>
-                            </ul>
-                        </li>
-                        <li>
-                            READING
-                            <ul>
-                                <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <a href="/Kanbas/Account/screen.html">
+                        <i class="fa fa-user-circle account" aria-hidden="true"></i>
+                        <div>Account</div>
+                    </a>
                 </li>
                 <li>
-                    Week 2
-                    <ul>
-                        <li>
-                            LEARNING OBJECTIVES
-                            <ul>
-                                <li>Introduction to the course</li>
-                                <li>Introduction to the course website</li>
-                                <li>Introduction to the course tools</li>
-                                <li>Introduction to the course assignments</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <div>Courses</div>
+                    </a>
                 </li>
                 <li>
-                    Week 3
-                    <ul>
-                        <li>
-                            LEARNING OBJECTIVES
-                            <ul>
-                                <li>Introduction to the course</li>
-                                <li>Introduction to the course website</li>
-                                <li>Introduction to the course tools</li>
-                                <li>Introduction to the course assignments</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <a href="/Kanbas/Calendar/screen.html">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <div>Calendar</div>
+                    </a>
                 </li>
                 <li>
-                    Week 4
-                    <ul>
-                        <li>
-                            LEARNING OBJECTIVES
-                            <ul>
-                                <li>Introduction to the course</li>
-                                <li>Introduction to the course website</li>
-                                <li>Introduction to the course tools</li>
-                                <li>Introduction to the course assignments</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <a href="#">
+                        <i class="fa fa-inbox" aria-hidden="true"></i>
+                        <div>Inbox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <div>History</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                        <div>Studio</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                        <div>Commons</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                        <div>Help</div>
+                    </a>
                 </li>
             </ul>
-        </td>
-        <td valign="top">
-            <h2>Course Status</h2>
-            <br />
-            <button>Unpublish</button>
-            <button>Publish</button>
-            <br />
-            <ul>
-                <li><a href="#">Import Existing Content</a></li>
-                <li><a href="#">Import From Commons</a></li>
-                <li><a href="#">Choose Home Page</a></li>
-                <li><a href="#">View Course Stream</a></li>
-                <li><a href="#">New Announcement</a></li>
-                <li><a href="#">New Analytics</a></li>
-                <li><a href="#">View Course Notification</a></li>
-            </ul>
-            <h2>Comming Up</h2>
-            <a href="#">View Calender</a>
-            <ul>
-                <li><a href="#">Lecture CS5610 Sep 7 at 7:00pm</a></li>
-                <li><a href="#">Lecture CS5610 Sep 12 at 7:00pm</a></li>
-                <li><a href="#">Lecture CS5610 Sep 14 at 7:00pm</a></li>
-            </ul>
-        </td>
-    </tr>
-</table>
+        </div>
+        <div class="wd-flex-col-container wd-flex-grow-1">
+            <div class="icon d-none d-md-flex">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <nav class="breadcrumb-bar" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="wd-hyperlink">CS5610.17367.202410</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="d-md-none bg-black text-white text-center py-2">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-1 text-start">
+                            <i class="fa fa-bars" data-bs-toggle="modal" data-bs-target="#menu1" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10">
+                            <div>CS5610.17367.202410</div>
+                            <div>Home</div>
+                        </div>
+                        <div class="col-1 text-end">
+                            <i class="fa fa-binoculars black-icon me-2" aria-hidden="true"></i>
+                            <i class="fa fa-sort-desc ms-2" data-bs-toggle="modal" data-bs-target="#menu2"
+                                aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-flex-row-container">
+                <div>
+                    <ul class="wd-course-navigation d-none d-md-block">
+                        <li class="wd-active">
+                            <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                        </li>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li>
+                            <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                        </li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="profile profile-flex-row-container profile-flex-grow-1">
+                    <div class="profile-flex-grow-1 ">
+                        <div class="btn-toolbar d-flex justify-content-end">
+                            <div class="btn-group me-2" role="group">
+                                <button type="button" class="btn btn-light">
+                                    Collapse All
+                                </button>
+                            </div>
+                            <div class="btn-group me-2" role="group">
+                                <button type="button" class="btn btn-light">
+                                    View Progress
+                                </button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                    Publish All
+                                </button>
+                            </div>
+                            <div class="btn-group me-2 " role="group">
+                                <button type="button" class="btn btn-danger">
+                                    + Module
+                                </button>
+                            </div>
+                            <div class="btn-group me-2" role="group">
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr />
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-sort-desc ms-2" aria-hidden="true"></i>
+                                <div class="ms-2 profile-flex-grow-1">Week 0 - INTRO</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-sort-desc align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-plus align-self-center ms-2" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-2 profile-flex-grow-1">LEARNING OBJECTIVES</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Introduction to the course</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Learn what is Web Development</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Creating a development environment</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Creating a Web Application</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Getting started with the 1st assignment</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-2 profile-flex-grow-1">READING</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Full Stack Developer - Chapter 1 - Introduction
+                                </div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Full Stack Developer - Chapter 2 - Creating User
+                                    Interfaces With HTML
+                                </div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-2 profile-flex-grow-1">SLIDES</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-link align-self-center ms-3" aria-hidden="true"></i>
+                                <a href="#" class="ms-3 wd-hyperlink profile-flex-grow-1">Introduction to Web
+                                    Development Links to an external site.</a>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-link align-self-center ms-3" aria-hidden="true"></i>
+                                <a href="#" class="ms-3 wd-hyperlink profile-flex-grow-1">Creating an HTTP server with
+                                    Node.js Links to an
+                                    external site.
+                                </a>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-link align-self-center ms-3" aria-hidden="true"></i>
+                                <a href="#" class="ms-3 wd-hyperlink profile-flex-grow-1">Creating a React Application
+                                    Links to an external
+                                    site.
+                                </a>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item list-group-item-secondary d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-sort-desc ms-2" aria-hidden="true"></i>
+                                <div class="ms-2 profile-flex-grow-1">Week 1 - HTML</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-2 profile-flex-grow-1">LEARNING OBJECTIVES</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Learn how to create user interfaces with HTML
+                                </div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-5 profile-flex-grow-1">Keep working on assignment 1</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <div class="ms-2 profile-flex-grow-1">SLIDES</div>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-link align-self-center ms-3" aria-hidden="true"></i>
+                                <a href="#" class="ms-3 wd-hyperlink profile-flex-grow-1">Introduction to Web
+                                    Development Links to an external site.</a>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-link align-self-center ms-3" aria-hidden="true"></i>
+                                <a href="#" class="ms-3 wd-hyperlink profile-flex-grow-1">Creating an HTTP server with
+                                    Node.js Links to an
+                                    external site.
+                                </a>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="fa fa-ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                <i class="fa fa-link align-self-center ms-3" aria-hidden="true"></i>
+                                <a href="#" class="ms-3 wd-hyperlink profile-flex-grow-1">Creating a React Application
+                                    Links to an external
+                                    site.
+                                </a>
+                                <div class="end-check">
+                                    <i class="fa fa-check-circle align-self-center" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v ellipsis-v align-self-center" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-bar d-none d-xl-block">
+                        <div class="mx-4 mt-2">Course Status</div>
+                        <div class="btn-toolbar d-flex justify-content-center">
+                            <div class="btn-group" role="group">
+                                <button type="button ms-2" class="btn btn-light">
+                                    <i class="fa fa-ban" aria-hidden="true"></i>
+                                    Unpublish
+                                </button>
+                            </div>
+                            <div class="btn-group me-2" role="group">
+                                <button type="button" class="btn btn-success">
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                    Published
+                                </button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="d-grid gap-1 col-10 mx-auto">
+                            <button class="btn btn-light text-start" type="button">
+                                <i class="fa fa-upload" aria-hidden="true"></i>
+                                Import Existing Content
+                            </button>
+                            <button class="btn btn-light text-start" type="button">
+                                <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                                Import From Commons
+                            </button>
+                            <button class="btn btn-light text-start" type="button">
+                                <i class="fa fa-bullseye" aria-hidden="true"></i>
+                                Choose Home Page
+                            </button>
+                            <button class="btn btn-light text-start" type="button">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                View Course Stream
+                            </button>
+                            <button class="btn btn-light text-start" type="button">
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                New Announcement
+                            </button>
+                            <button class="btn btn-light text-start" type="button">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                New Analytics
+                            </button>
+                            <button class="btn btn-light text-start" type="button">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                View Course Notification
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
