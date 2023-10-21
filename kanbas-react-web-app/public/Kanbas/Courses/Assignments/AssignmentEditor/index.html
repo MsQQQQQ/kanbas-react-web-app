@@ -1,0 +1,65 @@
+<select>
+    <option>SpeedGrader</option>
+</select>
+<hr />
+<h3>Assignment Name</h3>
+<input type="text" value="A1 - ENV + HTML" id="assignmentName" placeholder="Assignment Name" />
+<br />
+<br />
+<textarea cols="50" rows="5">This is the first assignment to build Kanbas</textarea> <br /> <br />
+<label for="points">Points</label> <br />
+<input id="points" value="100" type="number" max="100" min="50" step="5" /> <br /> <br />
+
+<label for="assignmentGroup">Assignment Group</label> <br />
+<select>
+    <option>ASSIGNMENTS</option>
+</select> <br /> <br />
+
+<label for="displayGrade">Display Grade as</label> <br />
+<select>
+    <option>Percentage</option>
+</select> <br /> <br />
+
+<label for="submissionType">Submission Type</label> <br />
+<select>
+    <option>Online</option>
+</select> <br /> <br />
+
+<label>Online Entry Options</label> <br />
+<input type="checkbox" /> Text Entry<br />
+<input type="checkbox" /> Website URL<br />
+<input type="checkbox" /> Media Recordings<br />
+<input type="checkbox" /> Student Annotation<br />
+<input type="checkbox" /> File Uploads<br /><br />
+
+<label for="submissionAttention">Submission Attention</label> <br />
+<select>
+    <option>Unlimited</option>
+</select> <br /> <br />
+
+<label for="plagiarismReview">Plagiarism Review</label> <br />
+<select>
+    <option>None</option>
+</select> <br /> <br />
+
+<label>Group Assignment</label> <br />
+<input type="checkbox" /> This is a group assingment<br /> <br />
+
+<label>Peer Reviews</label> <br />
+<input type="checkbox" /> Require Peer Reviews<br /> <br />
+
+<label for="assign">Assign</label> <br />
+<label for="assign">Assign to</label> <br />
+<input id="assign" value="Everyone" type="text" /> <br /> <br />
+
+<label for="due">Due</label> <br />
+<input id="due" type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" /> <br /> <br />
+
+<label for="available">Available from</label> <br />
+<input id="available" type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" /> <br /> <br />
+
+<label for="until">Until</label> <br />
+<input id="until" type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" /> <br /> <br />
+
+<button onclick="window.location='/Kanbas/Courses/Assignments/screen.html'">Cancel</button>
+<button onclick=" window.location='/Kanbas/Courses/Assignments/screen.html'">Save</button>

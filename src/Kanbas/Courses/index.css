@@ -1,0 +1,26 @@
+.ui.grid,
+.ui.grid>.row,
+.ui.grid>.row>.column {
+    margin: 0 !important;
+}
+
+
+.courseName {
+    margin: 20px 0 20px 0 !important;
+    padding-bottom: 30px;
+    border-bottom: 1.5px solid #000;
+}
+
+.courseName .ui.breadcrumb a {
+    color: rgb(196, 11, 11);
+    text-decoration: none;
+}
+
+.iconBar {
+    color: rgb(196, 11, 11);
+    margin-left: 25px !important;
+}
+
+.bread {
+    margin-left: 10px !important;
+}

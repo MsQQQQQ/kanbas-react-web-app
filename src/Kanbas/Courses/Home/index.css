@@ -1,0 +1,9 @@
+.status button {
+    text-align: left !important;
+    margin: 3px 0 3px 0 !important;
+    width: 100%;
+}
+
+.todo .ui.items>.item>.content>.header {
+    color: rgb(196, 11, 11);
+}

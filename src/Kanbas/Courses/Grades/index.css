@@ -1,0 +1,9 @@
+.grade-dropdown {
+    color: rgb(196, 11, 11);
+    font-size: large;
+}
+
+.filter-input .ui.grid>* {
+    padding: 0 !important;
+    margin-bottom: 10px;
+}

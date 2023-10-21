@@ -1,0 +1,146 @@
+.profile {
+    margin-left: 50px;
+}
+
+.profile h1 {
+    margin: 20px 0 20px 0;
+}
+
+.profile h2 {
+    margin: 20px 0 20px 0;
+}
+
+.icon {
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7d7a7a;
+}
+
+.icon span {
+    margin-left: 20px;
+}
+
+.icon i {
+    color: rgb(196, 11, 11);
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.profile-icon {
+    font-size: 200px;
+    color: #aaaaaa;
+    margin-right: 80px;
+}
+
+.edit-btn {
+    border: 0.1;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    background: rgb(238, 236, 236);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 130px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.float-end {
+    border: 0.1;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    background: rgb(238, 236, 236);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.profile-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-flex-grow-1 {
+    flex-grow: 1;
+}
+
+.fa-times {
+    color: red;
+}
+
+.profile-end {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    border-top: 1px solid #7d7a7a;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.profile-end-btn {
+    margin-top: 20px;
+}
+
+.title-font-size {
+    font-size: 35px;
+}
+
+.pronouns {
+    margin-bottom: 20px;
+}
+
+.add-btn {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.col-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-check-circle-o {
+    color: green;
+}
+
+.breadcrumb-bar {
+    margin-left: 20px;
+}
+
+.fa-link {
+    color: rgb(146, 226, 146);
+}
+
+.ellipsis-v {
+    margin-left: 2px;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.right-bar {
+    width: 280px;
+}
+
+.end-check {
+    justify-content: flex-end;
+}
+
+.small-menu i {
+    color: rgb(196, 11, 11);
+}
+
+.menu2 {
+    list-style-type: none;
+}
