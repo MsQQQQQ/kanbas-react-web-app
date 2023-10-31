@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
-import db from "../Database";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -11,11 +10,11 @@ import Grades from "./Grades";
 import { Icon, Breadcrumb } from 'semantic-ui-react'
 import "./index.css"
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const page = pathname.split("/").pop();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
 
   const sections = [
     { key: course.name, content: course.name, link: true },

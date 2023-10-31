@@ -1,14 +1,36 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
-import { Message, Icon } from 'semantic-ui-react'
+import { Message, Icon, Button } from 'semantic-ui-react'
 import "./index.css"
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
+
   return (
-    <div>
+    <div className="mt-4">
+      <li className="list-group-item border rounded-2 d-flex justify-content-between align-items-center" style={{ maxWidth: "100%", marginLeft: "20px", marginRight: "20px" }}>
+        <div className="d-flex align-items-center">
+          <input value={module.name} className="mx-4" style={{ width: "250px", height: "30px" }}
+            onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))} />
+          <textarea value={module.description} className="my-2" style={{ width: "350px", height: "30px" }}
+            onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))} />
+        </div>
+        <div className="mx-4">
+          <Button onClick={() => dispatch(addModule({ ...module, course: courseId }))} color="green">Add</Button>
+          <Button onClick={() => dispatch(updateModule(module))} color="blue">Update</Button>
+        </div>
+      </li>
+
       {
         modules
           .filter((module) => module.course === courseId)
@@ -31,6 +53,13 @@ function ModuleList() {
                   <Icon name='check circle' size="large" color="green" />
                   <Icon name='caret down' />
                   <Icon name='ellipsis vertical' />
+                  <Button
+                    onClick={() => dispatch(setModule(module))}>
+                    Edit
+                  </Button>
+                  <Button onClick={() => dispatch(deleteModule(module._id))} color="red">
+                    Delete
+                  </Button>
                 </div>
               </Message>
             </div>

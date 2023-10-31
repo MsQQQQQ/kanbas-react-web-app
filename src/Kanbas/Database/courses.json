@@ -21,44 +21,23 @@
     "endDate": "2023-05-15"
   },
   {
-    "_id": "RS102",
-    "name": "Aerodynamics",
-    "number": "RS4560",
+    "_id": "RS104",
+    "name": "Organic Chemistry",
+    "number": "CH1234",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
   },
   {
-    "_id": "RS103",
-    "name": "Spacecraft Design",
-    "number": "RS4570",
+    "_id": "RS105",
+    "name": "Inorganic Chemistry",
+    "number": "CH2345",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
   },
   {
-    "_id": "RS102",
-    "name": "Aerodynamics",
-    "number": "RS4560",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15"
-  },
-  {
-    "_id": "RS103",
-    "name": "Spacecraft Design",
-    "number": "RS4570",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15"
-  },
-  {
-    "_id": "RS102",
-    "name": "Aerodynamics",
-    "number": "RS4560",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15"
-  },
-  {
-    "_id": "RS103",
-    "name": "Spacecraft Design",
-    "number": "RS4570",
+    "_id": "RS106",
+    "name": "Physical Chemistry",
+    "number": "CH3456",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
   }

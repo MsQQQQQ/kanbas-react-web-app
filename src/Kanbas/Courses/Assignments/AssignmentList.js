@@ -2,10 +2,22 @@ import React from "react";
 import { Message, Icon, Label } from 'semantic-ui-react';
 import { Link, useParams } from "react-router-dom";
 import "./index.css"
+import { useSelector, useDispatch } from "react-redux";
+import {
+    addAssignment,
+    deleteAssignment,
+    updateAssignment,
+    setAssignment,
+} from "./assignmentsReducer";
+
 
 function AssignmentList(props) {
     const modules = props.assignmentList;
     const { courseId } = useParams();
+    const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+    const assignment = useSelector((state) => state.assignmentsReducer.assignment);
+    const dispatch = useDispatch();
+
 
     function getCurrentFormattedDateTime() {
         const now = new Date();
