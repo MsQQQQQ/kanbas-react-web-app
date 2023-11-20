@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AssignmentButtonGroup from "./AssignmentButtonGroup";
 import { Divider } from 'semantic-ui-react'
@@ -15,16 +15,20 @@ function Assignments() {
   const { courseId } = useParams();
   const assignments = useSelector((state) => state.assignmentsReducer.assignments);
   const assignment = useSelector((state) => state.assignmentsReducer.assignment);
-  const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId);
+
+
+  // const courseAssignments = assignments.filter(
+  //   (assignment) => assignment.course === courseId);
   return (
     <div className="mx-4">
       <div className="mt-3">
-        <AssignmentButtonGroup />
+        <AssignmentButtonGroup
+          addAssignment={addAssignment}
+        />
       </div>
       <Divider />
       <AssignmentList
-        assignmentList={courseAssignments}
+        assignmentList={assignments}
       />
     </div>
   );
