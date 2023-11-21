@@ -68,7 +68,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
             onChange={(e) => setCourse({ ...course, startDate: e.target.value })} />
           <input value={course.endDate} className="form-control my-2" type="date"
             onChange={(e) => setCourse({ ...course, endDate: e.target.value })} />
-          <Button onClick={addNewCourse} color='green' className="m-2">Add</Button>
+          <Button onClick={addNewCourse} color='green' className="m-2">Add</Button>/
           <Button onClick={updateCourse} color='blue'>Update</Button>
         </div>
         <div className="list-group d-flex flex-wrap">

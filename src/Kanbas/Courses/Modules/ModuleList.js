@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Message, Icon, Button } from 'semantic-ui-react'
 import "./index.css"
@@ -19,7 +19,7 @@ function ModuleList() {
       .then((modules) =>
         dispatch(setModules(modules))
       );
-  }, [courseId]);
+  });
   const handleAddModule = () => {
     client.createModule(courseId, module).then((module) => {
       dispatch(addModule(module));
