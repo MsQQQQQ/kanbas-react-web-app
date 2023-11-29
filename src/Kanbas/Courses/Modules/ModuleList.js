@@ -15,11 +15,12 @@ import * as client from "./client";
 function ModuleList() {
   const { courseId } = useParams();
   useEffect(() => {
+    console.log(" I am here ");
     client.findModulesForCourse(courseId)
       .then((modules) =>
         dispatch(setModules(modules))
       );
-  });
+  }, [courseId]);
   const handleAddModule = () => {
     client.createModule(courseId, module).then((module) => {
       dispatch(addModule(module));

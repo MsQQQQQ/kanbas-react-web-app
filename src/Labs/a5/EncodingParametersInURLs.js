@@ -2,23 +2,25 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function EncodingParametersInURLs() {
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const A5_API = `${API_BASE}/a5`;
     const [a, setA] = useState(34);
     const [b, setB] = useState(23);
     const [result, setResult] = useState(0);
     const fetchSum = async (a, b) => {
         const response = await
-            axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+            axios.get(`${A5_API}/add/${a}/${b}`);
         setResult(response.data);
     };
     const fetchSubtraction = async (a, b) => {
         const response = await axios.get(
-            `http://localhost:4000/a5/subtract/${a}/${b}`);
+            `${A5_API}/subtract/${a}/${b}`);
         setResult(response.data);
     };
 
     const [welcome, setWelcome] = useState("");
     const fetchWelcome = async () => {
-        const response = await axios.get("http://localhost:4000/a5/welcome");
+        const response = await axios.get(`${A5_API}/welcome`);
         setWelcome(response.data);
     };
     useEffect(() => {
@@ -47,7 +49,7 @@ function EncodingParametersInURLs() {
                 }
             />
             <a
-                href={`http://localhost:4000/a5/assignment/title/${assignment.title}`}
+                href={`${A5_API}/assignment/title/${assignment.title}`}
                 className="btn btn-primary"
             >
                 Update Assignment Title
@@ -57,7 +59,7 @@ function EncodingParametersInURLs() {
             <input className="form-control"
                 value={assignment.score} onChange={(e) => setAssignment({ ...assignment, score: e.target.value })}>
             </input>
-            <a href={`http://localhost:4000/a5/assignment/score/${assignment.score}`} className="btn btn-primary">update score</a><hr />
+            <a href={`${A5_API}/assignment/score/${assignment.score}`} className="btn btn-primary">update score</a><hr />
             <input
                 type="checkbox"
                 checked={assignment.completed}
@@ -65,16 +67,16 @@ function EncodingParametersInURLs() {
                     setAssignment({ ...assignment, completed: e.target.checked })
                 }}>
             </input>
-            <a href={`http://localhost:4000/a5/assignment/completed/${assignment.completed}`} className="btn btn-primary">complete</a><hr />
+            <a href={`${A5_API}/assignment/completed/${assignment.completed}`} className="btn btn-primary">complete</a><hr />
             <a
-                href={`http://localhost:4000/a5/assignment/title`}
+                href={`${A5_API}/assignment/title`}
                 className="btn btn-primary"
             >
                 Get Assignment Title
             </a>
             <hr />
             <a
-                href={`http://localhost:4000/a5/assignment`}
+                href={`${A5_API}/assignment`}
                 className="btn btn-primary"
             >
                 Get Assignment
@@ -107,26 +109,26 @@ function EncodingParametersInURLs() {
 
             <h3>Query Parameters</h3>
             <a
-                href={`http://localhost:4000/a5/calculator?a=${a}&b=${b}&operation=add`}
+                href={`${A5_API}/calculator?a=${a}&b=${b}&operation=add`}
                 className="btn btn-primary"
             >
                 Add {a} + {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/calculator?a=${a}&b=${b}&operation=subtract`}
+                href={`${A5_API}/calculator?a=${a}&b=${b}&operation=subtract`}
                 className="btn btn-danger"
             >
                 Substract {a} - {b}
             </a>
             <h3>Path Parameters</h3>
             <a
-                href={`http://localhost:4000/a5/add/${a}/${b}`}
+                href={`${A5_API}/add/${a}/${b}`}
                 className="btn btn-primary"
             >
                 Add {a} + {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/subtract/${a}/${b}`}
+                href={`${A5_API}/subtract/${a}/${b}`}
                 className="btn btn-danger"
             >
                 Substract {a} - {b}
